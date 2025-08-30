@@ -1,0 +1,14 @@
+
+There are 2 ways the data can travel inside a shift register
+1) Serial In: At every clock pulse a new bit gets loaded into the register, therefore 4 bit register will need 4 clock pulses to get loaded
+2) Parallel In: All bits get loaded in the single clock pulse.
+
+Same is for output that is:
+1) Serial Out: Only 1 bit accessible at a time
+2) Parallel out: All bits accessible at same clock pulse
+
+From this we have 4 types of registers:
+ - SISO = Serial in Serial out
+ - SIPO = Serial in Parallel out = Example: Time delay generation
+ - PISO = Parallel in Serial out = Example: Arithmetic operations
+ - PIPO = Parallel in Parallel out (Similar to the simple 8 bit register)
